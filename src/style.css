@@ -110,9 +110,16 @@ body{
         margin-left: 5px;
         cursor: pointer;
    }
+
+   .load-more:focus,
    .load-more:hover {
     background: #1a53ff;
     box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.load-more.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 /* ==========photo-card=================== */
