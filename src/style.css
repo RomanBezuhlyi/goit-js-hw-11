@@ -85,10 +85,10 @@ body{
 /* =============BTN-LOAD-MORE============ */
 
    .load-more{
-        display: block;
         position: relative;
         left: 50%;
         transform: translate(-50%, 0);
+        display: block;
         margin: 25px auto;
         max-width: 10%;
         height: calc(2.25rem + 2px);
@@ -113,4 +113,43 @@ body{
    .load-more:hover {
     background: #1a53ff;
     box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+/* ==========photo-card=================== */
+.gallery {
+    margin-top: 70px;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+}
+
+.photo-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    outline: 1px solid rgba(89, 89, 91, 0.4);
+    border-radius: 2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.photo-link img {
+    display: block;
+    height: 200px;
+    object-fit: cover;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+    color:#3366ff
+}
+
+.info-item span {
+    display: block;
+    text-align: center;
+    color: gray;
 }
